@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goldene Gabel</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italiana&display=swap" rel="stylesheet">
+
+</head>
+<body>
+   <div id="header_bg">
+    <header>
+        <a href="index.html" class="logo">
+            <img src="images/logo.svg" alt="">
+            Goldene Gabel
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+        <div id="btngroup">
+            <a href="#" class="btn">Call Us</a>
+            <a href="#" class="btn">Book Now</a>
+        </div>
+
+    </header>
+   </div>
+
+   <section id="hero">
+    <div id="slogan">
+        <h1>Where Every Flavor Tells a Story</h1>
+        <p>Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.</p>
+        <a href="#" class="btn">Visit Us</a>
+    </div>
+   </section>
+
+   <section id="menu">
+    <h2>Our Menu</h2>
+    <div id="menu_content">
+        <figure>
+            <img src="images/indian.jpg" alt="">
+            <figcaption>
+                <h3>Indian Ciusine</h3>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images/italian.jpg" alt="">
+            <figcaption>
+                <h3>Italian Ciusine</h3>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images/turkish.jpg" alt="">
+            <figcaption>
+                <h3>Turkish Ciusine</h3>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images/egyptian.jpg" alt="">
+            <figcaption>
+                <h3>Egyptian Ciusine</h3>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            </figcaption>
+        </figure>
+
+    </div>
+
+   </section>
+
+<section id="offers">
+    <h2>Our Latest Offers</h2>
+    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+    <a href="#" class="btn" id="offer_btn">Get the Offer</a>
+</section>
+
+<section id="testimonials">
+    <h2>Testimonials</h2>
+    <div id="test_content">
+    <figure>
+        <img src="images/test1.jpg" alt="">
+        <figcaption>
+            <h3>Person Name</h3>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+        </figcaption>
+
+    </figure>
+    <figure>
+        <img src="images/test2.jpg" alt="">
+        <figcaption>
+            <h3>Person Name</h3>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+        </figcaption>
+
+    </figure>
+    <figure>
+        <img src="images/test3.jpg" alt="">
+        <figcaption>
+            <h3>Person Name</h3>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+        </figcaption>
+
+    </figure>
+    <figure>
+        <img src="images/test4.jpg" alt="">
+        <figcaption>
+            <h3>Person Name</h3>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+        </figcaption>
+
+    </figure>
+</div>
+</section>
+<section id="booking">
+    <h2>Quick Booking</h2>
+    <form id="book" name="book">
+        <input type="text" name="name" id="name" class="field" placeholder="Name" required="required">
+        <input type="tel" name="mobile" id="mobile" class="field" placeholder="Mobile" required="required">
+        <div>
+        <input type="number" name="visitors" id="visitors" class="field" placeholder="No. of visitors" required="required" min="1" max="500">
+        <input type="number" name="table" id="table" class="field" placeholder="Table no." required="required" min="1" max="20">
+        </div>
+        <textarea name="msg" id="msg" class="field" placeholder="Message"></textarea>
+        <input type="submit" class="btn" id="submit" name="submit" value="Send">
+    </form>
+
+</section>
+</body>
+</html>
