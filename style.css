@@ -283,4 +283,5 @@ flex-wrap: wrap;
     border: 0px;
     margin: 0px auto;
 }
-
+/* للموبايل */
+@media (max-width: 768px) { ... }
