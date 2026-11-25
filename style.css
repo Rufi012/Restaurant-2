@@ -284,34 +284,23 @@ flex-wrap: wrap;
     margin: 0px auto;
 }
 /* للموبايل */
-/* تصليح الموبايل النهائي */
 @media (max-width: 768px) {
-  nav, .navbar, header nav {
-    overflow-x: auto !important;
-    white-space: nowrap !important;
-    justify-content: flex-start !important;
-  }
-  h1 {
-    font-size: 42px !important;
-    line-height: 1.1 !important;
-    margin: 0 auto !important;
-    padding: 0 15px !important;
-  }
-  .hero, header, .cover, .home {
-    height: auto !important;
-    min-height: 550px !important;
-    padding: 120px 15px 60px 15px !important;
-    display: flex !important;
+  /* خلي أي حاجة جنب بعض تبقى فوق بعض */
+  .row, .d-flex, [class*="flex"], .container > div, header > div {
     flex-direction: column !important;
-    justify-content: center !important;
+    flex-wrap: wrap !important;
   }
-  section {
-    padding-top: 50px !important;
-    margin-top: 0 !important;
-    position: relative !important;
+  /* أي عمود يبقى مالي الشاشة */
+  [class*="col-"], .col, .card, .menu-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: none !important;
+    margin-bottom: 20px !important;
   }
-  p {
-    font-size: 16px !important;
-    padding: 0 15px !important;
+  h1 { font-size: 38px !important; line-height: 1.2 !important; }
+  /* الغي القسمة بتاعت النص والصورة في البداية */
+  .hero-text, .hero-image {
+    width: 100% !important;
+    text-align: center !important;
   }
 }
