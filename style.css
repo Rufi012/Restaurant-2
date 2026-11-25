@@ -284,4 +284,27 @@ flex-wrap: wrap;
     margin: 0px auto;
 }
 /* للموبايل */
-@media (max-width: 768px) { ... }
+/* للموبايل */
+@media (max-width: 768px) {
+  .hero, header {
+    height: auto !important;
+    min-height: 450px;
+    padding: 20px;
+    text-align: center;
+  }
+  .hero h1, header h1 {
+    font-size: 28px !important;
+    line-height: 1.3;
+  }
+  .hero p, header p {
+    font-size: 15px !important;
+  }
+  .hero img, header img, .about img {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .container, .about, .menu {
+    flex-direction: column !important;
+    padding: 15px !important;
+  }
+}
