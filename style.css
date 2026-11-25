@@ -284,15 +284,34 @@ flex-wrap: wrap;
     margin: 0px auto;
 }
 /* للموبايل */
-* { box-sizing: border-box; max-width: 100%; }
-body { overflow-x: hidden; margin: 0; }
-img { max-width: 100%; height: auto; }
+/* تصليح الموبايل النهائي */
 @media (max-width: 768px) {
-  body { width: 100% !important; }
-  .container, .row, section, header, footer, div { width: 100% !important; max-width: 100% !important; flex-wrap: wrap !important; }
-  h1 { font-size: 26px !important; text-align: center; }
-}
+  nav, .navbar, header nav {
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+    justify-content: flex-start !important;
+  }
+  h1 {
+    font-size: 42px !important;
+    line-height: 1.1 !important;
+    margin: 0 auto !important;
+    padding: 0 15px !important;
+  }
+  .hero, header, .cover, .home {
+    height: auto !important;
+    min-height: 550px !important;
+    padding: 120px 15px 60px 15px !important;
+    display: flex !important;
     flex-direction: column !important;
-    padding: 15px !important;
+    justify-content: center !important;
+  }
+  section {
+    padding-top: 50px !important;
+    margin-top: 0 !important;
+    position: relative !important;
+  }
+  p {
+    font-size: 16px !important;
+    padding: 0 15px !important;
   }
 }
